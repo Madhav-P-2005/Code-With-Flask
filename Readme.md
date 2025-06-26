@@ -1,4 +1,4 @@
-# 📘 Flask Learning Repository — A Beginner’s Journey
+# 📘 Introduction to Flask — A Complete Beginner’s Guide
 
 A clean, minimal, and hands-on learning journey into **Flask**, the lightweight and flexible Python web framework. This repository mirrors a real-world development setup — from environment to project organization — for building scalable Flask apps step by step.
 
