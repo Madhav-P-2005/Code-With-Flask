@@ -1,4 +1,4 @@
-# 🔥 Flask Learning Repository — A Beginner’s Journey
+# 📘 Flask Learning Repository — A Beginner’s Journey
 
 A clean, minimal, and hands-on learning journey into **Flask**, the lightweight and flexible Python web framework. This repository mirrors a real-world development setup — from environment to project organization — for building scalable Flask apps step by step.
 
@@ -6,7 +6,7 @@ A clean, minimal, and hands-on learning journey into **Flask**, the lightweight 
 
 ## 🚀 What is Flask?
 
-> Flask is a **micro web framework** for Python.
+Flask is a **micro web framework** for Python.
 
 - Lightweight and minimal  
 - Flexible structure — you define your architecture  
