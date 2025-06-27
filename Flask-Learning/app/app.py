@@ -4,7 +4,7 @@
 '''
 
 # Import the Flask class from the flask package 
-from flask import Flask
+from flask import Flask , render_template
 
 
 # Create an instance of the Flask class
@@ -16,7 +16,10 @@ app = Flask(__name__)
 
 # Define a view function associated with the route 
 def welcome():
-    return "<H1>Welcome to your Flask App<H2>"
+    # return "<H1>Welcome to your Flask App<H2>"
+
+    # Render the 'Welcome.html' template from the 'templates' directory
+    return render_template('Welcome.html')
 
     
 # Check if the script is run directly 
