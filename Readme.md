@@ -74,14 +74,16 @@ pip install flask
 ```
 Flask-Learning/
 │
-├── app/                        # Core application folder
-│   ├── app.py                  # Main Flask app
-│   └── templates/              # Jinja2 HTML templates
-│       └── Welcome.html        # Sample template
+├── app/                            # Core application folder
+│   ├── app.py                      # Entry point that initializes and runs the Flask app
+│   ├── controllers/                # Contains modular route logic (Blueprints)
+│   │   └── welcome_controller.py   # Blueprint for handling '/' route (e.g., Welcome page)
+│   └── templates/                  # Jinja2 HTML templates for rendering views
+│       └── Welcome.html            # Template rendered by the welcome controller
 │
-├── MyEnvironment/              # Virtual environment (not pushed to GitHub)
-├── .gitignore                  # Ignores MyEnvironment and other unnecessary files
-└── Readme.md                   # Project documentation
+├── MyEnvironment/                  # Virtual environment (excluded from GitHub)
+├── .gitignore                      # Ignore virtual environment and temporary files
+└── Readme.md                       # Project documentation and learning reference
 ```
 
 ---

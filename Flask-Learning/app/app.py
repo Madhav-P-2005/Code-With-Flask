@@ -7,8 +7,28 @@
 from flask import Flask , render_template
 
 
+'''
+
+⭐) Integrating the Blueprint with the Flask Application
+
+
+a) Model :-   Represents the data and business logic of the application. We will cover models in more detail in a future lesson.
+
+b) View  :-  Represents the user interface and presentation layer. So far, you have seen views as templates rendered with Jinja2 in Flask.
+
+c) Controller :-  Acts as an intermediary between Model and View. It processes user input, interacts with the Model, and selects the View to display accordingly.
+
+'''
+
+from controllers.welcome_controller import welcome_controller
+
+
 # Create an instance of the Flask class
 app = Flask(__name__)
+
+
+# Registering the Blueprint
+app.register_blueprint(welcome_controller)
 
 
 # Define a Route and View Function 
