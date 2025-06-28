@@ -1,5 +1,5 @@
 '''
-⭐) Importing and Initializing Flask  And  Sisplaying Dynamic Content with Jinja2 Templates 
+⭐) Importing and Initializing Flask  And  Displaying Dynamic Content with Jinja2 Templates 
 
 '''
 
