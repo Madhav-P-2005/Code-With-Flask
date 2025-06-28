@@ -1,5 +1,5 @@
 '''
-⭐) Importing and Initializing Flask 
+⭐) Importing and Initializing Flask  And  Sisplaying Dynamic Content with Jinja2 Templates 
 
 '''
 
@@ -19,7 +19,14 @@ def welcome():
     # return "<H1>Welcome to your Flask App<H2>"
 
     # Render the 'Welcome.html' template from the 'templates' directory
-    return render_template('Welcome.html')
+    # return render_template('Welcome.html')
+
+
+    # Define a variable with some value
+    name = "Madhav P"
+
+    # Pass the Variablle to the 'Welcome.html' Template
+    return render_template('Welcome.html' , name=name)
 
     
 # Check if the script is run directly 

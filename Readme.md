@@ -32,7 +32,7 @@ Flask is a **micro web framework** for Python.
 ### 📁 Step 1: Create Project Directory
 
 ```bash
-mkdir Flask-Learning && cd Flask-Learning
+mkdir Flask-Learning && cd Flask-Learning\app
 ````
 
 ---
@@ -46,6 +46,10 @@ python -m venv MyEnvironment
 #### ✅ Activate (PowerShell)
 
 ```bash
+.\MyEnvironment\Scripts\Activate.ps1
+
+or
+
 .\Flask-Learning\MyEnvironment\Scripts\Activate.ps1
 ```
 
@@ -69,10 +73,46 @@ pip install flask
 
 ```
 Flask-Learning/
-├── MyEnvironment/        # Virtual Environment
-├── app.py                # Flask application entry point
-└── README.md             # Project documentation
+│
+├── app/                        # Core application folder
+│   ├── app.py                  # Main Flask app
+│   └── templates/              # Jinja2 HTML templates
+│       └── Welcome.html        # Sample template
+│
+├── MyEnvironment/              # Virtual environment (not pushed to GitHub)
+├── .gitignore                  # Ignores MyEnvironment and other unnecessary files
+└── Readme.md                   # Project documentation
 ```
+
+---
+
+Exactly ✅ — you're absolutely right!
+
+No need to include the actual Flask server code (`app.run(...)`) in your **README.md**, since:
+
+* It's already written in your `app.py`.
+* Anyone checking your GitHub repo will see the code directly.
+* Your README should focus on **how to run**, not replicate the source code.
+
+So here's the clean version for your **README** section:
+
+---
+
+## ▶️ How to Run the Flask Server
+
+Once you're inside the virtual environment and at the root of your project:
+
+```bash
+python app.py
+```
+
+By default, Flask will run on:
+
+```
+http://127.0.0.1:5000
+```
+
+> If you've set a custom host and port (like `0.0.0.0:3000`), Flask will reflect that in the terminal when the server starts.
 
 ---
 
