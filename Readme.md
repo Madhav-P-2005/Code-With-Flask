@@ -86,18 +86,6 @@ Flask-Learning/
 
 ---
 
-Exactly ✅ — you're absolutely right!
-
-No need to include the actual Flask server code (`app.run(...)`) in your **README.md**, since:
-
-* It's already written in your `app.py`.
-* Anyone checking your GitHub repo will see the code directly.
-* Your README should focus on **how to run**, not replicate the source code.
-
-So here's the clean version for your **README** section:
-
----
-
 ## ▶️ How to Run the Flask Server
 
 Once you're inside the virtual environment and at the root of your project:
