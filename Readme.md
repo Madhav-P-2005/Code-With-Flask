@@ -122,14 +122,13 @@ http://127.0.0.1:5000
 7. Sending data (variables, lists) from Python to HTML
 ---
 
----
+
 
 ## 🔗 What’s Next?
 
-📁 **This marks the end of the Flask learning phase.**
-🧠 **Now continuing the journey by building a real-world ToDo App using Flask.**
+1) **This marks the end of the Flask learning phase.**.
+2) 🧠 **Now continuing the journey by building a real-world >ToDo App using Flask.**.
 👉 **Follow my next repo here ➜ [`Flask-ToDo-App`](#)** *(https://github.com/Madhav-P-2005/Flask-ToDo-App.git)*
----
 
 ---
 
