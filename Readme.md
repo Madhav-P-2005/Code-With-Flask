@@ -120,7 +120,6 @@ http://127.0.0.1:5000
 5. Using **Blueprints** to modularize routes
 6. Creating a **Service Layer** to manage business logic separately
 7. Sending data (variables, lists) from Python to HTML
-
 ---
 
 ## 🔗 What’s Next?
