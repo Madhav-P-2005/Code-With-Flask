@@ -14,5 +14,12 @@
           Using Variables in Templates :-  Render the 'name' variable inside the placeholder
     -->
     <h1> Welcome , {{ name }}</h1>
+
+    <!-- ⭐) Managing Business Logic with Service Layer  :-   Looping Through Items in a Template -->
+   <ul>
+    {% for name in names %}
+    <li> Welcome ! {{name}} </li>
+    {% endfor %}
+   </ul>
 </body>
 </html>
