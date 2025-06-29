@@ -111,16 +111,24 @@ http://127.0.0.1:5000
 
 ---
 
-## 🌱 What’s Coming Next?
+## 📚 Topics Covered
 
-* Dynamic routes & URL parameters
-* Using Jinja2 templates
-* Handling forms & POST requests
-* Flask Blueprints
-* Connecting databases
-* REST API with Flask
+1. Setting up Flask with a virtual environment
+2. Installing and configuring Flask
+3. Rendering static and dynamic content using **Jinja2 templates**
+4. Structuring Flask apps cleanly with folders like `templates/`, `controllers/`, and `services/`
+5. Using **Blueprints** to modularize routes
+6. Creating a **Service Layer** to manage business logic separately
+7. Sending data (variables, lists) from Python to HTML
+8. Clean and scalable folder architecture for future-ready Flask development
 
-Stay tuned! This repo will grow along with your Flask skills 🔥
+---
+
+## 🔗 What’s Next?
+
+📁 **This marks the end of the Flask learning phase.**
+🧠 **Now continuing the journey by building a real-world ToDo App using Flask.**
+👉 **Follow my next repo here ➜ [`Flask-ToDo-App`](#)** *(link your ToDo repo when ready)*
 
 ---
 
