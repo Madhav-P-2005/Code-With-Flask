@@ -32,7 +32,7 @@ Flask is a **micro web framework** for Python.
 ### 📁 Step 1: Create Project Directory
 
 ```bash
-mkdir Flask-Learning && cd Flask-Learning
+mkdir Flask-Learning && cd Flask-Learning\app
 ````
 
 ---
@@ -46,6 +46,10 @@ python -m venv MyEnvironment
 #### ✅ Activate (PowerShell)
 
 ```bash
+.\MyEnvironment\Scripts\Activate.ps1
+
+or
+
 .\Flask-Learning\MyEnvironment\Scripts\Activate.ps1
 ```
 
@@ -69,23 +73,62 @@ pip install flask
 
 ```
 Flask-Learning/
-├── MyEnvironment/        # Virtual Environment
-├── app.py                # Flask application entry point
-└── README.md             # Project documentation
+│
+├── app/                                # Core application folder
+│   ├── app.py                          # Entry point that initializes and runs the Flask app
+│
+│   ├── controllers/                    # Handles route logic using Blueprints (modular routing)
+│   │   └── welcome_controller.py       # Blueprint for handling the '/' route (e.g., Welcome page)
+│
+│   ├── services/                       # Business logic abstraction layer
+│   │   └── welcome_service.py          # Contains logic for managing and returning welcome-related data
+│
+│   └── templates/                      # Jinja2 templates for rendering dynamic HTML content
+│       └── Welcome.html                # Template that uses variables (e.g., name, names list)
+│
+├── MyEnvironment/                      # Virtual environment 
+├── .gitignore                          # Excludes virtual environment and cache/temp files
+└── Readme.md                           # Project documentation and learning progress
 ```
 
 ---
 
-## 🌱 What’s Coming Next?
+## ▶️ How to Run the Flask Server
 
-* Dynamic routes & URL parameters
-* Using Jinja2 templates
-* Handling forms & POST requests
-* Flask Blueprints
-* Connecting databases
-* REST API with Flask
+Once you're inside the virtual environment and at the root of your project:
 
-Stay tuned! This repo will grow along with your Flask skills 🔥
+```bash
+python app.py
+```
+
+By default, Flask will run on:
+
+```
+http://127.0.0.1:5000
+```
+
+> If you've set a custom host and port (like `0.0.0.0:3000`), Flask will reflect that in the terminal when the server starts.
+
+---
+
+## 📚 Topics Covered
+
+1. Setting up Flask with a virtual environment
+2. Installing and configuring Flask
+3. Rendering static and dynamic content using **Jinja2 templates**
+4. Structuring Flask apps cleanly with folders like `templates/`, `controllers/`, and `services/`
+5. Using **Blueprints** to modularize routes
+6. Creating a **Service Layer** to manage business logic separately
+7. Sending data (variables, lists) from Python to HTML
+---
+
+
+
+## 🔗 What’s Next?
+
+1) **This marks the end of the Flask learning phase.**.
+2) 🧠 **Now continuing the journey by building a real-world >ToDo App using Flask.**.
+👉 **Follow my next repo here ➜ [`Flask-ToDo-App`](#)** *(https://github.com/Madhav-P-2005/Flask-ToDo-App.git)*
 
 ---
 
